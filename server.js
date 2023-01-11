@@ -27,6 +27,7 @@ switch (type) {
   }
 };
 
+const init = () => {
 prompt({
   type: 'rawlist',
   message: 'Please select one of the following',
@@ -40,3 +41,5 @@ prompt({
 .then((answers) => {
   listOption(answers.type);
 });
+};
+init();
