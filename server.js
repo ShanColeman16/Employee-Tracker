@@ -19,8 +19,10 @@ const addEmployee = () => {
       message: 'Please enter the employee\'s last name.',
     }    
   ])
-  
-}
+  .then((answers) => {
+    console.log(answers);
+  });
+};
 const listOption = (type) => {
 switch (type) {
   case 'VIEW ALL DEPARTMENTS': {
