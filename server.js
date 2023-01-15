@@ -8,6 +8,19 @@ const db = mysql.createConnection({
   database: 'employeelist_db'
 });
 
+const addEmployee = () => {
+  prompt ([
+    {
+      name: 'first name',
+      message: 'Please enter the employee\'s first name.',
+    },
+    {
+      name: 'last name',
+      message: 'Please enter the employee\'s last name.',
+    }    
+  ])
+  
+}
 const listOption = (type) => {
 switch (type) {
   case 'VIEW ALL DEPARTMENTS': {
